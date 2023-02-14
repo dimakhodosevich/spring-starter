@@ -11,11 +11,18 @@ public class ApplicationRunner {
 
         var container = new Container();
 
-        var connectionPool = new ConnectionPool();
-        var companyRepository = new CompanyRepository(connectionPool);
-        var userRepository = new UserRepository(connectionPool);
 
-        var userService = new UserService(userRepository, companyRepository);
+//        var connectionPool = new ConnectionPool();
+//        var companyRepository = new CompanyRepository(connectionPool);
+//        var userRepository = new UserRepository(connectionPool);
+//        var userService = new UserService(userRepository, companyRepository);
+
+        var connectionPool = container.get(ConnectionPool.class);
+        var companyRepository = container.get(CompanyRepository.class);
+        var userRepository = container.get(UserRepository.class);
+        var userService = container.get(UserService.class);
+
+
 
 
     }
