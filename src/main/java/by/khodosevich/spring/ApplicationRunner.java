@@ -6,10 +6,34 @@ import by.khodosevich.spring.database.repository.UserRepository;
 import by.khodosevich.spring.ioc.Container;
 import by.khodosevich.spring.service.UserService;
 
+/**
+ * This is main class for run project
+ * @author Dima Khodosevich
+ * @since 18.02.2023
+ * @version 1.01
+ */
+
 public class ApplicationRunner {
+    /**
+     * This argument is container.
+     * @see Container#get(Class)
+     *
+     *
+     */
+
+    private Container container;
+
+    /**
+     * This is main method with runs the project
+     * @param args takes String array
+     *
+     * @see String
+     */
+
     public static void main(String[] args) {
 
-        var container = new Container();
+
+              var container = new Container();
 
 
 //        var connectionPool = new ConnectionPool();

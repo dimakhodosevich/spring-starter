@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"by.khodosevich.spring"},{"l":"by.khodosevich.spring.database.pool"},{"l":"by.khodosevich.spring.database.repository"},{"l":"by.khodosevich.spring.ioc"},{"l":"by.khodosevich.spring.service"}];updateSearchResults();
