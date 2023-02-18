@@ -5,6 +5,7 @@ import by.khodosevich.spring.database.repository.CompanyRepository;
 import by.khodosevich.spring.database.repository.UserRepository;
 import by.khodosevich.spring.ioc.Container;
 import by.khodosevich.spring.service.UserService;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * This is main class for run project
@@ -31,21 +32,13 @@ public class ApplicationRunner {
      */
 
     public static void main(String[] args) {
+        var dimaContext = new ClassPathXmlApplicationContext("dimaapplication.xml");
+        System.out.println(dimaContext.getBean("dima1", ConnectionPool.class));
 
-
-              var container = new Container();
-
-
-//        var connectionPool = new ConnectionPool();
-//        var companyRepository = new CompanyRepository(connectionPool);
-//        var userRepository = new UserRepository(connectionPool);
-//        var userService = new UserService(userRepository, companyRepository);
-
-        var connectionPool = container.get(ConnectionPool.class);
-        var companyRepository = container.get(CompanyRepository.class);
-        var userRepository = container.get(UserRepository.class);
-        var userService = container.get(UserService.class);
-
+//
+//        var context = new ClassPathXmlApplicationContext("application.xml");
+//        var connectionPool = context.getBean("p5", ConnectionPool.class);
+//        System.out.println(connectionPool);
 
 
 

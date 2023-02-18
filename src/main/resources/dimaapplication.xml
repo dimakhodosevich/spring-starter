@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="dima1" name = "d1, d2, d3" class="by.khodosevich.spring.database.pool.ConnectionPool"  />
+    <bean id="dima2" name = "d4, d5, d6" class="by.khodosevich.spring.database.pool.ConnectionPool"  />
+
+</beans>
